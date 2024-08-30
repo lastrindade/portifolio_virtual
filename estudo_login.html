@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* formatção do corpo da Página */
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #F5F5DC;
+            color: black;
+            margin: 0;
+            padding: 100px;
+        }
+
+        /* formatação do mnu fixo */
+        .menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color:white;
+            padding: 25px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        .menu a:hover {
+            text-decoration: wavy;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .enter-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .enter-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .login-form {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .title, .input-field, .login-btn {
+            opacity: 0;
+            position: relative;
+        }
+
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #218838;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .animate-title {
+            animation: slideDown 0.5s forwards;
+        }
+
+        .animate-username {
+            animation: slideFromLeft 0.5s 0.5s forwards;
+        }
+
+        .animate-password {
+            animation: slideFromRight 0.5s 1s forwards;
+        }
+
+        .animate-login-btn {
+            animation: slideUp 0.5s 1.5s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                top: -50px;
+                opacity: 0;
+            }
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                left: -100%;
+                opacity: 0;
+            }
+            to {
+                left: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideFromRight {
+            from {
+                right: -100%;
+                opacity: 0;
+            }
+            to {
+                right: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                bottom: -50px;
+                opacity: 0;
+            }
+            to {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão para retornar à sessão Portifólio no index -->
+    <div class="menu">
+        <b>
+            <a href="../../index.html#portifolio">Voltar para Home</a>
+        </b>
+    </div>
+
+    <div class="container">
+        <button id="show-login" class="enter-btn">Entrar</button>
+
+        <div id="login-form" class="login-form">
+            <h2 id="login-title" class="title">Preencha para Acessar:</h2>
+            <input type="text" id="username" class="input-field" placeholder="Usuário">
+            <input type="password" id="password" class="input-field" placeholder="Senha">
+            <button id="login-button" class="login-btn">Entrar</button>
+        </div>
+    </div>
+
+    <!--link para o script que anima o menu-->
+    <script src="estudo_login_java.js"></script>
+</body>
+</html>

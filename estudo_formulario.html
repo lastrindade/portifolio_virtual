@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Novo Usuário</title>
+    <style>
+        /* Estilo do fundo com gradiente */
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom right, #8b0000, #ff6347); /* Vermelho escuro para vermelho claro */
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        /* formatação do menu fixo */
+        .menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color:white;
+            padding: 25px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        .menu a:hover {
+            text-decoration: wavy;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+        /* Estilo do menu */
+        .dropdown {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* Estilo do botão do menu */
+        .dropdown-button {
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: 2px solid white;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            text-shadow: 2px 2px 4px black;
+        }
+
+        /* Estilo do conteúdo suspenso */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+        }
+
+        /* Links dentro do menu suspenso */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+
+        /* Estilo do link quando passar o mouse */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Mostra o menu suspenso ao passar o mouse sobre o botão */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilo do formulário */
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            border: 4px solid white;
+            text-shadow: 2px 2px 4px black;
+            width: 400px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .form-container label {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .form-container input,
+        .form-container select {
+            width: calc(100% - 24px); /* Ajuste para caber dentro da moldura */
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: #8b0000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão para retornar à sessão Portifólio no index -->
+    <div class="menu">
+        <b>
+            <a href="../../index.html#portifolio">Voltar para Home</a>
+        </b>
+    </div>
+
+    <div class="form-container">
+        <h2>Cadastro de Novo Usuário</h2>
+        <form action="processa_cadastro.php" method="post">
+            <label for="first_name">Nome:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Sobrenome:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirme a Senha:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Virtual</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #F5F5DC;
+            color: black;
+            margin: 0;
+            padding: 100px;
+        }
+
+        /* formatação do menu fixo */
+        .menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color:white;
+            padding: 25px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        .menu a:hover {
+            text-decoration: wavy;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+
+        /* Estilo das seções */
+        section {
+            padding: 50px;
+            text-align: right;
+        }
+
+        section h1 {
+            text-align: center;
+            font-size: 100px;
+            padding: 60px;
+        }
+
+        section h2 {
+            font-size: 48px;
+            text-transform: lowercase;
+            display: inline-block;
+            margin-bottom: 30px;
+            margin-right: 100px;
+            padding-bottom: 20px;
+        }
+
+        section h3 {
+            font-size: 30px;
+            padding: 0;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 30px;
+            text-indent: 200px;
+            text-align: justify;
+            margin-left: 100px;
+            margin-right: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-left: auto; /* Alinhar automaticamente a margem esquerda */
+            margin-right: auto; /* Alinhar automaticamente a margem direita */
+            width: 80%; /* Ajuste conforme necessário */
+            max-width: 800px; /* Defina um valor máximo para a largura */
+        }
+
+        form label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #F8F8FF;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        form button {
+            background-color: #F8F8FF;
+            color: #300000;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        form button:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <b>
+        <a href="#home">Home</a>
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portifolio">Portifólio</a>
+        <a href="#contato">Contato</a>
+        </b>
+    </div>
+
+    <section id="home">
+        <h1>Portifólio Virtual</h1>
+        <h3>Luan Armindo Schmidt Trindade</h3>
+        <h3>Ciência de Dados</h3>
+        <h3>RU: 4636016</h3>
+    </section>
+    <section id="sobre-mim">
+        <h2>sobre mim</h2>
+        <hr>
+        <br>
+        <p>	
+            Meu nome é Luan Armindo Schmidt Trindade, tenho 30 anos de idade e, apesar de ter nascido na cidade de 
+            Marechal Cândido Rondon - interior do Paraná -, vivi minha vida inteira em São Paulo: na Capital por 24 anos 
+            e agora no interior, mais especificamente na cidade de Indaiatuba, próxima à Campinas e ao Aeroporto de Vira-Copos.
+            Mudei-me recentemente buscando escapar do ritmo frenético e da violência da capital e, até o momento, não me
+            arrependo nem um pouco!</p>
+            <p>Não tenho filhos e nem animais de estimação. Vivo atualmente uma vida tranquila e pacata ao lado de minha namorada, 
+            que veio morar comigo a quase um ano. Minha família retornou recentemente para a cidade onde nasci, e eu os visito 
+            periodicamente sempre que possível, apesar da viagem de 14 horas não ser muito agradável. Meus amigos são todos de 
+            São Paulo, e ter vindo morar no interior diminuiu meu contato físico com eles, porém, ainda nos vemos rotineiramente
+            em ocasiões especiais e conversamos diariamente através das redes sociais. Tenho muito orgulho das amizades que 
+            cultivei ao longo da vida!</p>
+            <p>Sou apaixonado por cinema e música, meus hobbies prediletos. Gosto muito de ir ao cinema e a shows além de, é claro, 
+            assistir filmes no conforto de casa. Quando me sobra um tempinho, gosto de praticar meus instrumentos - o baixo elétrico 
+            e a guitarra. Não sou lá grandes coisas, mas consigo tirar algumas músicas das minhas bandas favoritas, como Sleep, High 
+            on Fire, Kyuss e Black Sabbath.</p>
+            <p>No mais, sou um Historiador - baicharel e licenciatura -, formado pela Faculdade de Filosofia, Letras e Ciências Humanas 
+            da Universidade de São Paulo em busca de novos horizontes e novos aprendizados. Apesar do gosto por história, sempre 
+            tive interesse por tecnologia e tem sido uma jornada muito interessante aprender mais sobre computadores e programação 
+            agora que estou fazendo o curso de Tecnologia em Ciência de Dados na Uninter!
+        </p>
+        <br>
+        <hr>
+    </section>
+
+    <section id="formacao">
+        <h2>formação</h2>
+        <hr>
+        <br>
+        <p style="text-indent:0;">Concluído: </p>
+        <p style="text-indent:50px;">Bacharelado e Licenciatura em História - Faculdade de Filosofia, Letras de Ciências Humanas - FFLCH-USP</p>
+        <br>
+        <p style="text-indent:0;">Cursando: </p>
+        <p style="text-indent:50px;">Técnologia em Ciência de Dados - UNINTER-EAD</p>
+        <br>
+        <hr>
+    </section>
+
+    <section id="portifolio">
+        <h2>portifólio</h2>
+        <hr>
+        <br>
+        <p>Estudo - Tela de Login Deslizante Usando Javascript - <a href="portifolio/estudo_login/estudo_login.html">Acessar</a></p>
+        <br>
+        <p>Estudo - Menu Deslizante Usando Javascript - <a href="portifolio/estudo_menu/estudo_menu.html">Acessar</a></p>
+        <br>
+        <p>Estudo - Formulário de Cadastramento de Usuário - <a href="portifolio/formulario/estudo_formulario.html">Acessar</a></p>
+        <br>
+        <hr>
+    </section>
+
+    <section id="contato">
+        <h2>contato</h2>
+        <hr>
+        <br>
+        <p style="text-indent:138px;">Informações para contato:</p>
+        <p>Celular e Whatsapp: (11) 96929-4321</p>
+        <p>e-Mail: luan.trindade176@gmail.com</p>
+        <br>
+        <br>
+        <p style="text-indent:138px;">Envie uma Mensagem:</p>
+        <form action="mailto:luan.trindade176@gmail.com" method="post" enctype="text/plain">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <br>
+        <br>
+        <hr>
+    </section>
+</body>
+</html>
